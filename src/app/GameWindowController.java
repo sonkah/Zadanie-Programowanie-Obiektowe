@@ -50,10 +50,12 @@ public class GameWindowController implements Initializable{
 		if(startButton.getText()== "Start"){
 			boardPane.getChildren().add(b.getRoot());
 			startButton.setText("Stop");
+			bestScoresButton.setVisible(false);
 			
 		}
 		else if(startButton.getText()== "Stop")
 		{
+			bestScoresButton.setVisible(true);
 			endButton.setVisible(true);
 			startButton.setText("Jeszcze raz");
 			Record r = new Record(Integer.valueOf(pointsLabel.getText()), nameLabel.getText());
@@ -61,6 +63,7 @@ public class GameWindowController implements Initializable{
 			
 		}
 		else{
+			bestScoresButton.setVisible(false);
 			endButton.setVisible(false);
 			boardPane.getChildren().add(b.getRoot());
 			startButton.setText("Stop");

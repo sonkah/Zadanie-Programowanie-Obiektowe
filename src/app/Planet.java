@@ -78,7 +78,6 @@ public class Planet extends StackPane {
 			mouseX = event.getSceneX();
 			mouseY = event.getSceneY();
 			
-			this.getParent().getScene();
 			
 			int column = (int) mouseX / TILE_SIZE; 			// COLUMN - X!!!
 			int row = (int) mouseY / TILE_SIZE; 			// ROW - Y! PAMIÊTAJ
