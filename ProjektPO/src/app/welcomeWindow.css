@@ -1,0 +1,22 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+/*to jest do Welcome Window */
+.root
+{
+	 -fx-background-image: url("/nightsky.jpeg");
+}
+#myGrid
+{
+	-fx-background-image: url("/nightsky.jpeg");
+}
+.label
+{
+	-fx-font-size: 20px;
+	-fx-font-weight: bold;
+}
+#urNameLabel
+{
+	-fx-font-size: 15px;
+}
+.ListView{
+	-fx-font-size: 15px;
+}
